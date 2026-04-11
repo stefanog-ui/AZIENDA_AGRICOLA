@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/../config/Database.php';
+
 $host = '127.0.0.1';
 $port = 3306;
 $db   = 'azienda_agricola';
