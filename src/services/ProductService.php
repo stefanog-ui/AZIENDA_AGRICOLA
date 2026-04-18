@@ -12,7 +12,7 @@ class ProductService
         string $description,
         int $stock,
         float $price,
-        ?string $expirationDate = null
+        DateTime $expirationDate,
     ): int {
         if ($stock < 0) {
             throw new Exception('Stock cannot be negative.');
