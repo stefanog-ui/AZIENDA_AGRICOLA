@@ -2,6 +2,9 @@
 
 session_start();
 
+$successMessage = $_SESSION['registration_success'] ?? '';
+unset($_SESSION['registration_success']);
+
 require_once __DIR__ . '/../config/Database.php';
 require_once __DIR__ . '/../src/repositories/UserRepository.php';
 require_once __DIR__ . '/../src/services/AuthService.php';
@@ -61,6 +64,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="general-error"><?php echo htmlspecialchars($generalError); ?></div>
     <?php endif; ?>
 
+    <?php if ($successMessage !== ''): ?>
+        <div class="success-message"><?php echo htmlspecialchars($successMessage); ?></div>
+    <?php endif; ?>
+
     <form method="POST" action="">
         <div class="form-group">
             <label for="email">Email</label>
@@ -91,6 +98,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <button type="submit">Log in</button>
     </form>
+
+    <p class="bottom-text">
+        Don't have an account?
+        <a href="register.php">Sign up</a>
+    </p>
 </div>
 </body>
 </html>

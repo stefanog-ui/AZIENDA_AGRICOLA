@@ -1,0 +1,60 @@
+body {
+    background: #f4f4f4;
+}
+
+.register-container {
+    width: 380px;
+    margin: 80px auto;
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bottom-text {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bottom-text a {
+    color: #2d6cdf;
+    text-decoration: none;
+}
+
+.bottom-text a:hover {
+    text-decoration: underline;
+}
+
+.radio-group {
+    display: flex;
+    gap: 16px;
+    padding: 10px 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.radio-option input {
+    width: auto;
+    margin: 0;
+}
+
+.error-group {
+    border: 2px solid #d93025;
+    background: #fff5f5;
+}

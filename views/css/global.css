@@ -1,27 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-
-.login-container {
-    width: 360px;
-    margin: 80px auto;
-    background: white;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-}
-
-h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.form-group {
-    margin-bottom: 16px;
 }
 
 label {
@@ -45,21 +25,6 @@ input.error {
     background: #fff5f5;
 }
 
-.error-text {
-    color: #d93025;
-    font-size: 13px;
-    margin-top: 6px;
-}
-
-.general-error {
-    color: #d93025;
-    background: #fff5f5;
-    border: 1px solid #f1b0b7;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 16px;
-}
-
 button {
     width: 100%;
     padding: 12px;
@@ -75,10 +40,20 @@ button:hover {
     background: #1f57ba;
 }
 
-.success-message {
-    color: #1e7e34;
-    background: #eafaf0;
-    border: 1px solid #b7e4c7;
+.form-group {
+    margin-bottom: 16px;
+}
+
+.error-text {
+    color: #d93025;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.general-error {
+    color: #d93025;
+    background: #fff5f5;
+    border: 1px solid #f1b0b7;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 16px;
